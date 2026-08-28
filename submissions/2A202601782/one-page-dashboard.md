@@ -16,7 +16,7 @@
 | L · L-02 | Số hẹn HR đã chốt ÷ 5 | 0/5 · ≥1,0 / 0,60–0,99 / <0,60 · `[TB]` | Tuần · Product Ops | TTFV · R-02 |
 | O · O-01 | Job hoàn tất ÷ job thử, theo account | chưa đo · ≥66,7 / 37,5–66,6 / <37,5 · `[TB]` | Tuần · Product Ops | Payback · R-03 |
 | O · O-02 | Token + retry ÷ job hoàn tất | ~105đ ước · ≤1.805 / 1.806–2.605 / >2.605 · `[MH]` | Tuần · FinOps | GM · R-04 |
-| O · O-03 | Giờ triển khai × 150kđ ÷ ACV 28,8tr | chưa đo · <15 / 15–30 / >30 · `[TB]` | Tuần · Product Ops | GM · R-03 |
+| O · O-03 | Giờ triển khai × 150kđ ÷ ACV 28,8tr | chưa đo · ≤5 / >5–10 / >10 · `[MH]` | Tuần · Product Ops | GM + payback · R-03 |
 | G · G-01 | (ARPU − COGS biến đổi) ÷ ARPU | 81% mô hình / 62,5% D24 · ≥60 / 50–59 / <50 · `[MH]` | Tháng · Finance | Runway · R-04 |
 | G · G-02 | CAC ÷ (ARPU × GM) | 2,4 tháng mô hình · ≤2,4 / 2,5–12 / >12 · `[MH]` | Tháng · Finance | NPV · R-05 |
 
@@ -26,8 +26,8 @@
 |---|---|---|---|---|
 | R-01 | TTFV >30 ngày · 2 cohort · ≥2 DN hoặc 5 ca | Cắt 1 vị trí/folder; dừng SME mới 14 ngày | Không giảm giá; không tuyển sales | CÓ |
 | R-02 | Coverage <0,60 · 14 ngày · sheet ≥7 ngày | Dừng outreach ngoài 5 DN; founder chỉ chốt hẹn | Không mở Sales-Led; không chạy ads | CÓ |
-| R-03 | Usage <37,5% hoặc triển khai/ACV >30% · 2 tuần · ≥20 job hoặc 1 timesheet | Cắt onboarding còn 1 folder Drive; ngồi cạnh; ghi timesheet | Không bán overage; không nhận khách mới cùng giá | KHÔNG |
-| R-04 | AI cost >2.605đ hoặc GM <50% · 2 tuần · ≥50 job hoàn tất | Giới hạn 2.800 token tươi; cắt retry 5%; đàm phán quota | Không bỏ QA; không tăng giá đại trà | KHÔNG |
+| R-03 | Triển khai/ACV >10% · 2 tuần · ≥1 timesheet đầy đủ | Dừng onboarding mới 7 ngày; còn 1 folder; trần hỗ trợ 19,2 giờ | Không bán overage; không thuê ngoài để giấu cost | CÓ |
+| R-04 | AI cost >2.605đ · 2 tuần · ≥50 job hoàn tất | Giới hạn 2.800 token tươi; cắt retry 5%; đàm phán quota | Không bỏ QA; không tăng giá đại trà | KHÔNG |
 | R-05 | Payback >12 tháng · 1 tháng · ≥1 khách trả phí hoặc CAC đã ghi | Đóng băng acquisition ngoài founder PLG | Không thuê AE; không tăng phí nền | CÓ |
 
 ## Cổng 90 ngày

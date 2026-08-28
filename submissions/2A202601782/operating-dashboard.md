@@ -72,7 +72,7 @@ Cây tuần này (7 đèn, không copy cả bảng handbook): L-02 coverage 5 h�
 |---|---|---|---|---:|---|---|---|---|---|---|---|
 | O-01 | Usage depth trong tài khoản | Với từng DN đang test hoặc pilot: số job có báo cáo hoàn tất chia số job thử trong tuần. Đây là tỷ lệ hoàn tất, không phải % seat đã mua. Không đếm lần gọi API. Không gộp nhiều DN. Công thức: job hoàn tất ÷ job thử, theo account | Tuần · Product Operations | chưa đo; log portal từ 2026-09-11 | ≥66,7% | 37,5–66,6% | <37,5% | [TB] Xanh = eval Day 25 keyword 8/12 = 66,7%. Đỏ = 30 CV activation ÷ 80 CV tối đa một ca thứ Hai = 37,5%. Không dùng 60% vì 60% là KPI số CV, không phải tỷ lệ hoàn tất. Chốt lại sau 4 tuần log, 2026-10-15 | 2026-08-28 | G-02 CAC payback (tài khoản không hoàn tất job thì CAC không thu hồi) | R-03 |
 | O-02 | Chi phí AI trên mỗi job hoàn tất | Tổng chi phí token LLM cộng retry trong tuần, quy đổi 26.000 đ/USD, chia số job HOÀN TẤT. Không chia job thử. Không gồm HITL hay infra. Công thức: (USD token + USD retry) × 26.000 ÷ số job hoàn tất | Tuần · FinOps | ~105 đ (ước 2.800/1.200 token, chưa usage_metadata) | ≤1.805 đ | 1.806–2.605 đ | >2.605 đ | [MH] MH-01: 8.000×(1−0,60)−225−1.170 = 1.805 đ giữ GM 60%; 8.000×(1−0,50)−225−1.170 = 2.605 đ là mép GM 50% | 2026-08-28 | G-01 Gross Margin | R-04 |
-| O-03 | Chi phí triển khai ÷ ACV | Giờ founder hoặc kỹ sư ngồi cạnh khách trong kỳ × 150.000 đ/giờ, chia ACV niêm yết 2.400.000 đ/tháng × 12 = 28.800.000 đ. Một khách. Không gồm R&D chung. Công thức: chi phí giờ triển khai ÷ 28.800.000 | Tuần · Product Operations | chưa đo; timesheet từ 2026-09-11 | <15% | 15–30% | >30% | [TB] 15/30% là điểm khởi đầu handbook B2B, chưa có hóa đơn triển khai. Chốt sau 3 khách, 2026-10-15 | 2026-08-28 | G-01 Gross Margin (triển khai nặng biến iRSA thành dịch vụ) | R-03 |
+| O-03 | Chi phí triển khai ÷ ACV | Giờ founder hoặc kỹ sư ngồi cạnh khách trong kỳ × 150.000 đ/giờ, chia ACV niêm yết 2.400.000 đ/tháng × 12 = 28.800.000 đ. Một khách. Không gồm R&D chung. Công thức: chi phí giờ triển khai ÷ 28.800.000 | Tuần · Product Operations | chưa đo; timesheet từ 2026-09-11 | ≤5% | >5–10% | >10% | [MH] MH-03: một tháng gross profit = 2.400.000×60% = 1.440.000 đ = 5% ACV = 9,6 giờ; hai tháng = 2.880.000 đ = 10% ACV = 19,2 giờ | 2026-08-28 | G-01 Gross Margin và CAC payback (triển khai ăn trước gross profit) | R-03 |
 
 ## Đèn kết quả
 
@@ -91,7 +91,7 @@ Một câu cho mỗi đèn. Ba vùng không chồng. Không lấy trung vị ng�
 | L-02 | Xanh = đủ 5 hẹn đã viết trong Day 25 tháng 1; vàng 3–4 hẹn (0,60–0,99) còn học được; đỏ dưới 3 hẹn thì không đủ pain moment để đo TTFV. |
 | O-01 | Xanh ≥66,7% lấy eval 8/12 Day 25, không phải 60% activation; vàng 37,5–66,6%; đỏ <37,5% = 30 CV ÷ 80 CV một ca thứ Hai thì không đạt activation trong đúng pain moment. |
 | O-02 | Xanh ≤1.805 đ giữ GM 60% khi infra 225 đ và HITL 1.170 đ đứng yên; vàng đến 2.605 đ là mép GM 50%; đỏ trên 2.605 đ thì COGS biến đổi đã ăn hơn nửa giá 8.000 đ. |
-| O-03 | Xanh <15% = dưới 28,8 giờ × 150.000 đ trên ACV 28,8 triệu đ; vàng 15–30% (28,8–57,6 giờ) còn là sản phẩm; đỏ >30% biến iRSA thành dịch vụ mặc áo SaaS. |
+| O-03 | Xanh ≤5% vì triển khai tiêu tối đa một tháng gross profit Day 25 (1,44 triệu đ = 9,6 giờ); vàng đến 10% tiêu hai tháng (2,88 triệu đ = 19,2 giờ); đỏ >10% làm chậm payback trước cả CAC và COGS định kỳ. |
 | G-01 | Xanh ≥60% lấy đúng ô B32 Day 25, không lấy ~53% AI-native làm đích; vàng 50–59% trùng đèn CẢNH BÁO trên tab giá; đỏ <50% trùng NGUY HIỂM. |
 | G-02 | Xanh ≤2,4 tháng là payback Base Day 24 đã tính; vàng đến 12 tháng còn nằm trong trần CAC 2.000 USD (MH-02); đỏ >12 tháng vượt ngân sách SMB của chính mô hình, không phải mốc 18 tháng mid-market. |
 
@@ -103,8 +103,8 @@ Một câu cho mỗi đèn. Ba vùng không chồng. Không lấy trung vị ng�
 |---|---|---|---|---|---|---|
 | R-01 | Median TTFV >30 ngày | 2 cohort liên tiếp | Mỗi cohort ≥2 tài khoản go-live hoặc ≥5 ca time-motion | Cắt pilot còn một vị trí một folder CV và dừng nhận SME mới trong 14 ngày | Không giảm giá gói 2,4 triệu và không tuyển sales để bù TTFV chậm | CÓ |
 | R-02 | Coverage 5 hẹn HR <0,60 | 14 ngày liên tiếp | Sheet tháng 1 đã mở ≥7 ngày | Dừng mọi outreach ngoài danh sách 5 DN và chuyển founder sang chốt cho đủ 5 hẹn | Không mở Sales-Led và không chạy ads để bù số hẹn | CÓ |
-| R-03 | Usage depth <37,5% hoặc chi phí triển khai ÷ ACV >30% | 2 tuần liên tiếp | Account có ≥20 job thử hoặc ≥1 khách có timesheet | Cắt onboarding còn một folder CV trên Drive, founder ngồi cạnh và ghi timesheet trong tuần tới | Không bán overage và không nhận khách mới cùng mức giá khi tài khoản hiện tại chưa dùng hết | KHÔNG |
-| R-04 | Chi phí AI / job hoàn tất >2.605 đ hoặc Gross Margin <50% | 2 tuần liên tiếp | ≥50 job hoàn tất trong cửa sổ | Giới hạn token tươi còn 2.800/lượt, cắt retry xuống tối đa 5%, đàm phán lại quota Gemini trước kỳ billing | Không bỏ HITL/QA để cost trông thấp hơn và không tăng giá đại trà | KHÔNG |
+| R-03 | Chi phí triển khai ÷ ACV >10% | 2 tuần liên tiếp | ≥1 khách có timesheet đầy đủ | Dừng nhận onboarding mới 7 ngày; cắt account hiện tại còn một folder CV và giới hạn hỗ trợ ở 19,2 giờ | Không bán overage và không thuê ngoài onboarding để giấu chi phí triển khai | CÓ |
+| R-04 | Chi phí AI / job hoàn tất >2.605 đ | 2 tuần liên tiếp | ≥50 job hoàn tất trong cửa sổ | Giới hạn token tươi còn 2.800/lượt, cắt retry xuống tối đa 5%, đàm phán lại quota Gemini trước kỳ billing | Không bỏ HITL/QA để cost trông thấp hơn và không tăng giá đại trà | KHÔNG |
 | R-05 | CAC payback >12 tháng | 1 tháng lịch | Đã có ≥1 khách trả phí hoặc đã ghi fully-loaded CAC | Đóng băng mọi chi tiêu acquisition ngoài PLG founder ngồi cạnh | Không thuê AE và không tăng phí nền để bù CAC | CÓ |
 
 ## Cổng gác 90 ngày
@@ -150,6 +150,7 @@ Mỗi khoảng trống có cách đo và ngày xem lại. Không để trống c
 |---|---|---|---|---|
 | MH-01 | Trần token+retry để GM 60% và 50% | Giá bán = 8.000 đ/CV hoàn tất; GM mục tiêu B32 = 60%; infra = 225 đ/job; HITL QA = 1.170 đ/job; Cost/Job hiện ≈ 1.500 đ | Trần GM 60%: 8.000 × (1 − 0,60) = 3.200; 3.200 − 225 − 1.170 = 1.805. Trần GM 50%: 8.000 × (1 − 0,50) = 4.000; 4.000 − 225 − 1.170 = 2.605 | O-02: xanh ≤1.805 đ, vàng 1.806–2.605 đ, đỏ >2.605 đ. G-01: xanh ≥60%, vàng 50–59%, đỏ <50% |
 | MH-02 | Trần CAC và payback SMB | ARPU Day 25 = 205,13 USD/khách/tháng; GM Day 25 = 81,25%; payback Base Day 24 = 2,4 tháng; CAC Base = 3.000.000 đ | Ngân sách: 205,13 × 0,8125 × 12 = 2.000 USD/khách. Payback tại trần: 2.000 ÷ (205,13 × 0,8125) = 12 tháng. Base: 3.000.000 ÷ (2.000.000 × 0,625) = 2,4 tháng | G-02: xanh ≤2,4 tháng, vàng 2,5–12 tháng, đỏ >12 tháng |
+| MH-03 | Ngân sách triển khai theo gross profit | Phí nền Day 25 = 2.400.000 đ/tháng; GM mục tiêu = 60%; ACV = 28.800.000 đ; giờ triển khai = 150.000 đ/giờ | Một tháng GP: 2.400.000 × 60% = 1.440.000 đ; 1.440.000 ÷ 28.800.000 = 5%; 1.440.000 ÷ 150.000 = 9,6 giờ. Hai tháng GP = 2.880.000 đ = 10% ACV = 19,2 giờ | O-03: xanh ≤5%, vàng >5–10%, đỏ >10% |
 
 ## Ghi nhận AI critique
 
@@ -158,5 +159,5 @@ Chạy prompt 5.1–5.4 trên dashboard đã viết sẵn. Không dán dữ li�
 | Phản biện | Chấp nhận hay bác bỏ | Thay đổi đã thực hiện | Lý do |
 |---|---|---|---|
 | O-01 lấy 60% từ KPI activation (đủ 30 CV) gắn lên tỷ lệ hoàn tất — hai khái niệm, VIBES | Chấp nhận | 🟢 ≥66,7% (8/12); 🟡 37,5–66,6%; 🔴 <37,5% (30÷80). Cổng 60 = 66,7% | 8/12 = 66,7%. 30 CV ÷ 80 CV một ca thứ Hai = 37,5%. Không bịa 60% |
-| R-04 đòi ≥200 job hoàn tất — tháng 1 PLG không đủ mẫu nên GM thủng mà luật không bắn | Chấp nhận | Đổi mẫu R-04 thành ≥50 job hoàn tất | Pain moment Day 25: 50–80 CV/sáng thứ Hai; 50 là một ca |
-| R-03 THÌ prototype Drive Picker cả sprint — đội 2 người không làm được thứ Hai | Chấp nhận | THÌ còn cắt onboarding một folder Drive, ngồi cạnh, ghi timesheet | Hành động nhỏ hơn, vẫn cấm bán overage |
+| O-03 dùng 15%/30% từ handbook, không suy từ iRSA; R-03 lại ghép hai trigger | Chấp nhận | Thêm MH-03: O-03 = ≤5% / >5–10% / >10%; R-03 chỉ bắn khi O-03 >10% | 5% và 10% tương ứng một và hai tháng gross profit Day 25; luật giờ có một trigger |
+| R-04 đòi ≥200 job và ghép AI cost với GM — tháng 1 PLG có thể không bắn | Chấp nhận | Mẫu còn ≥50 job; NẾU chỉ dùng O-02 >2.605 đ | 50 là đáy một ca 50–80 CV; O-02 đã báo trước G-01 nên không cần lặp GM |
