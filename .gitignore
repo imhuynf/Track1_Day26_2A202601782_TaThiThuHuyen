@@ -7,6 +7,8 @@
 # Student work and exported evidence
 /submissions/*
 !/submissions/.gitkeep
+!/submissions/2A202601782/
+!/submissions/2A202601782/**
 /out/
 /dist/
 /build/
